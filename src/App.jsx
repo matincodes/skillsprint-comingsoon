@@ -3,7 +3,7 @@ import Nav from "./ui/Nav"
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-black">
       <Nav/>
       <Hero/>
     </div>
