@@ -26,4 +26,3 @@ const Hero = () => {
 
 export default Hero;
 
-// border-solid border-[1px] border-white
