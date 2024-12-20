@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className="w-[80%] h-auto mt-[217px] flex flex-col gap-[52px] border-solid border-[1px] border-white">
-      <div className="w-full h-auto flex flex-col gap-[22px] border-solid border-[1px] border-white">
+    <div className="w-[80%] h-auto mt-[217px] flex flex-col gap-[52px] ">
+      <div className="w-full h-auto flex flex-col gap-[22px] ">
         <h5 className="text-[15px] font-Montserrat text-gray  ">
           About program
         </h5>
@@ -14,8 +14,8 @@ const About = () => {
         </p>
       </div>
       {/* Cards */}
-      <div className="w-full h-auto flex flex-wrap justify-center  gap-[26px] border-solid border-[1px] border-white">
-        <div className="w-[139px] h-[106px] rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
+      <div className="w-full h-auto grid grid-cols-2 md:flex md:justify-between  gap-[26px] ">
+        <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
           <span className="text-white font-bold text-[16px] leading-[22px]">
             Free
           </span>{" "}
@@ -23,7 +23,7 @@ const About = () => {
             foundational training.
           </span>
         </div>
-        <div className="w-[139px] h-[106px] rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
+        <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
           <span className="text-gray text-[16px] font-semibold leading-[22px]">
             Career
           </span>{" "}
@@ -34,7 +34,7 @@ const About = () => {
             and support.
           </span>
         </div>
-        <div className="w-[139px] h-[106px] rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
+        <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
           <span className="text-white font-bold text-[16px] leading-[22px]">
             Live classes
           </span>{" "}
@@ -45,7 +45,7 @@ const About = () => {
             projects
           </span>
         </div>
-        <div className="w-[139px] h-[106px] rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
+        <div className="w-auto h-auto  rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
           <span className="text-gray text-[16px] font-semibold leading-[22px]">
             Access to
           </span>
@@ -66,5 +66,3 @@ const About = () => {
 };
 
 export default About;
-// border-solid border-[1px] border-white
-//Access to internships and job placements
