@@ -58,4 +58,3 @@ const CountDown = () => {
 };
 
 export default CountDown;
-//border-solid border-[1px] border-white

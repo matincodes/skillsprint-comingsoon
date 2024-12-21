@@ -3,6 +3,7 @@ import About from "./components/About";
 import Nav from "./ui/Nav";
 import Choose from "./components/Choose";
 import CountDown from "./components/CountDown";
+import Question from "./components/Question";
 const App = () => {
   return (
     <div className="flex flex-col items-center bg-black">
@@ -11,6 +12,7 @@ const App = () => {
       <About />
       <Choose/>
       <CountDown/>
+      <Question/>
     </div>
   );
 };
