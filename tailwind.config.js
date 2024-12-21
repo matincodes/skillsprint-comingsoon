@@ -9,7 +9,8 @@ export default {
         white: "#FFFFFF",
         gray: "#808080",
         black: "#000000",
-        semiBlack:"#080808"
+        semiBlack: "#080808",
+        darkGray:"#1A1A1A"
       },
       fontFamily: {
         Montserrat: "Montserrat",
