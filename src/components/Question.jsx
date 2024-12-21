@@ -7,29 +7,29 @@ const Question = () => {
       <h2 className="text-white text-[16px] font-semibold font-Montserrat">
         Frequently asked questions
       </h2>
-      <div className="overflow-x-scroll">
+      <div className="overflow-x-scroll scrollbar  scrollbar-none ">
         <div className="w-[1096px] h-[36px] flex gap-[26px]  ">
-          <button className="text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          <p className="cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
             General Information
-          </button>
-          <button className="text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          </p>
+          <p className="cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
             Program Details
-          </button>
-          <button className="text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          </p>
+          <p className="cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
             Registration and Fees
-          </button>
-          <button className="text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          </p>
+          <p className="cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
             Career Support
-          </button>
-          <button className="text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          </p>
+          <p className="cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
             Learning Experience
-          </button>
-          <button className="text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          </p>
+          <p className="cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
             Technical Requirements
-          </button>
-          <button className="text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          </p>
+          <p className="cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
             Additional Questions
-          </button>
+          </p>
         </div>
       </div>
       {/* Acordiong */}
