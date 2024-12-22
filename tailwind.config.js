@@ -12,7 +12,8 @@ export default {
         black: "#000000",
         semiBlack: "#080808",
         darkGray: "#1A1A1A",
-        darkWhite:"#71879C33"
+        darkWhite: "#71879C33",
+        footerBg:"#1A1106"
       },
       fontFamily: {
         Montserrat: "Montserrat",
