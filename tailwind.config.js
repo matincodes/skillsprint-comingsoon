@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import scrollbar from "tailwind-scrollbar"
+import scrollbar from "tailwind-scrollbar";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -11,7 +11,8 @@ export default {
         gray: "#808080",
         black: "#000000",
         semiBlack: "#080808",
-        darkGray:"#1A1A1A"
+        darkGray: "#1A1A1A",
+        darkWhite:"#71879C33"
       },
       fontFamily: {
         Montserrat: "Montserrat",
@@ -19,7 +20,5 @@ export default {
       },
     },
   },
-  plugins: [
-   scrollbar
-  ],
+  plugins: [scrollbar],
 };
