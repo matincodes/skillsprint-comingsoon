@@ -23,6 +23,10 @@ import roller22 from "../../assets/icons/roller22.svg";
 import roller23 from "../../assets/icons/roller23.svg";
 import roller24 from "../../assets/icons/roller24.svg";
 import roller25 from "../../assets/icons/roller25.svg";
+import useMeasure from "react-use-measure";
+import { motion, useMotionValue } from "motion/react";
+import { useEffect } from "react";
+import { animate } from "motion";
 
 const icons = [
   {
@@ -126,11 +130,46 @@ const icons = [
     src: roller25,
   },
 ];
-
 const Animation = () => {
+    // left animation
+
+  let [left, { width }] = useMeasure();
+  const xTranslation = useMotionValue(0);
+  useEffect(() => {
+    let controls;
+    const finalPosition = - width / 2 - 16;
+    controls = animate(xTranslation, [0, finalPosition], {
+      ease: "linear",
+      duration: 25,
+      repeat: Infinity,
+      repeatType: "loop",
+      repeatDelay: 0,
+    });
+    return controls.stop;
+  }, [xTranslation, width]);
+
+  // right animation
+  // let [ref, { width }] = useMeasure();
+  const yTranslation = useMotionValue(  0);
+  useEffect(() => {
+    let controls;
+    const finalPosition = width / 2 - 16;
+    controls = animate(yTranslation, [0, finalPosition], {
+      ease: "linear",
+      duration: 55,
+      repeat: Infinity,
+      repeatType: "loop",
+      repeatDelay: 0,
+    });
+    return controls.stop;
+  }, [yTranslation, width]);
   return (
-    <div className="w-full h-[149px] overflow-hidden flex flex-col gap-[25px] ">
-      <div className="w-[2759px] h-[62px] flex gap-[16px]  ">
+    <div className=" xl:mt-[172px] w-full h-[149px] overflow-hidden flex flex-col gap-[25px] ">
+      <motion.div
+        className="w-[5518px] h-[62px] flex gap-[16px]  "
+        ref={left}
+        style={{ x: xTranslation }}
+      >
         {icons.map((items) => (
           <span
             key={items.id}
@@ -139,8 +178,20 @@ const Animation = () => {
             <img src={items.src} />
           </span>
         ))}
-      </div>
-      <div className="w-[2759px] h-[62px] flex gap-[16px]  ">
+         {icons.map((items) => (
+          <span
+            key={items.id}
+            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-white border-solid"
+          >
+            <img src={items.src} />
+          </span>
+        ))}
+      </motion.div>
+      <motion.div
+        className="w-[5518px] h-[62px] flex gap-[16px] relative left-[-700%] xl:left-[-200%] "
+        ref={left}
+        style={{ x: yTranslation }}
+      >
         {icons.map((items) => (
           <span
             key={items.id}
@@ -149,7 +200,15 @@ const Animation = () => {
             <img src={items.src} />
           </span>
         ))}
-      </div>
+         {icons.map((items) => (
+          <span
+            key={items.id}
+            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-white border-solid"
+          >
+            <img src={items.src} />
+          </span>
+        ))}
+      </motion.div>
     </div>
   );
 };

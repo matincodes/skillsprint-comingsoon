@@ -13,7 +13,7 @@ const Nav = () => {
   }
   return (
     <>
-      <nav className=" fixed w-full h-[54px] bg-lightDark flex items-center justify-between px-[25px]">
+      <nav className=" z-10 fixed w-full h-[54px] bg-lightDark flex items-center justify-between px-[25px]">
         <img src={logo} />
         <img
           onClick={HandleOpen}
