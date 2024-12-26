@@ -164,7 +164,7 @@ const Animation = () => {
     return controls.stop;
   }, [yTranslation, width]);
   return (
-    <div className=" xl:mt-[172px] w-full h-[149px] overflow-hidden flex flex-col gap-[25px] ">
+    <div className="  w-full h-[149px] overflow-hidden flex flex-col gap-[25px] ">
       <motion.div
         className="w-[5518px] h-[62px] flex gap-[16px]  "
         ref={left}

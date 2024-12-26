@@ -1,7 +1,7 @@
 const CountDown = () => {
   return (
     <div className="xl:gap-[52px] w-[80%] h-auto flex flex-col gap-[29px] justify-between mt-[217px] ">
-      <h2 className="xl:text-[29px] font-Montserrat text-[16px] font-bold text-white text-center">
+      <h2 className=" font-Montserrat text-[16px] font-bold text-white text-center">
         The Countdown to Your Future Starts Now!
       </h2>
       <div className="w-full h-auto flex justify-between  ">

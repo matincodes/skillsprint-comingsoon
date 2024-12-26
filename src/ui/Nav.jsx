@@ -30,7 +30,7 @@ const Nav = () => {
         </ul>
       </nav>
       {isOpen && (
-        <div className=" xl:hidden fixed  flex flex-col gap-[38px] w-full h-auto px-[25px] py-[11px] bg-lightDark">
+        <div className=" z-10 xl:hidden fixed  flex flex-col gap-[38px] w-full h-auto px-[25px] py-[11px] bg-lightDark">
           <div className=" w-full h-[32px] flex justify-end">
             <img
               onClick={HandleClose}
