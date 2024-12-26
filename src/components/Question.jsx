@@ -1,28 +1,60 @@
 import { useReducer } from "react";
 import GeneralInformation from "../ui/generalInformation";
 import ProgramDetails from "../ui/ProgramDetails";
+import RegistrationandFees from "../ui/registrationandFees";
+import CareerSupport from "../ui/CareerSupport";
 
 const currentState = {
   generalInformation: true,
   programDetails: false,
+  registrationandFees: false,
+  careerSupport: false,
 };
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "generalInformation":
-      return { ...state, generalInformation: true, programDetails: false };
+      return {
+        ...state,
+        generalInformation: true,
+        programDetails: false,
+        careerSupport: false,
+        registrationandFees: false,
+      };
     case "programDetails":
-      return { ...state, programDetails: true, generalInformation: false };
+      return {
+        ...state,
+        programDetails: true,
+        generalInformation: false,
+        careerSupport: false,
+        registrationandFees: false,
+      };
+    case "registrationandFees":
+      return {
+        ...state,
+        registrationandFees: true,
+        programDetails: false,
+        generalInformation: false,
+        careerSupport: false,
+      };
+    case "careerSupport":
+      return {
+        ...state,
+        careerSupport: true,
+        registrationandFees: false,
+        programDetails: false,
+        generalInformation: false,
+      };
     default:
       return state;
   }
 };
 
 const Question = () => {
-  const [{ generalInformation, programDetails }, dispatch] = useReducer(
-    reducer,
-    currentState
-  );
+  const [
+    { registrationandFees, careerSupport, generalInformation, programDetails },
+    dispatch,
+  ] = useReducer(reducer, currentState);
 
   return (
     <div className="w-[80%] h-auto mt-[235px]  flex flex-col gap-[29px] ">
@@ -44,10 +76,16 @@ const Question = () => {
           >
             Program Details
           </button>
-          <button className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          <button
+            onClick={() => dispatch({ type: "registrationandFees" })}
+            className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center"
+          >
             Registration and Fees
           </button>
-          <button className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          <button
+            onClick={() => dispatch({ type: "careerSupport" })}
+            className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center"
+          >
             Career Support
           </button>
           <button className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
@@ -64,6 +102,8 @@ const Question = () => {
       {/* Acordiong */}
       {generalInformation && <GeneralInformation />}
       {programDetails && <ProgramDetails />}
+      {registrationandFees && <RegistrationandFees />}
+      {careerSupport && <CareerSupport />}
     </div>
   );
 };
