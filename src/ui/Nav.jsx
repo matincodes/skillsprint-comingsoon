@@ -2,7 +2,7 @@ import burger from "../assets/icons/burger.svg";
 import logo from "../assets/icons/logo.svg";
 import closeNav from "../assets/icons/closeNav.svg";
 import { useState } from "react";
-const data = ["Home", "About ", "Program highlights", "Waitlist", "FAQ"];
+const data = ["Home", "About", "Program highlights", "Waitlist", "FAQ"];
 const Nav = () => {
   const [isOpen, setIsopen] = useState(false);
   function HandleOpen() {
@@ -11,6 +11,13 @@ const Nav = () => {
   function HandleClose() {
     setIsopen(false);
   }
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsopen(false);
+  };
   return (
     <>
       <nav className=" z-10 fixed w-full h-[54px] bg-lightDark flex items-center justify-between px-[25px]">
@@ -22,11 +29,15 @@ const Nav = () => {
           alt="burger"
         />
         <ul className=" font-normal text-lightGray font-Inter text-[16px] xl:flex hidden  gap-[84px]  ">
-        {data.map((items, index) => (
-              <li className="cursor-pointer" key={index}>
-                {items}
-              </li>
-            ))}
+          {data.map((items, index) => (
+            <li
+              onClick={() => handleScroll(items)}
+              className="cursor-pointer"
+              key={index}
+            >
+              {items}
+            </li>
+          ))}
         </ul>
       </nav>
       {isOpen && (
@@ -40,7 +51,11 @@ const Nav = () => {
           </div>
           <ul className="flex flex-col gap-[38px] font-Inter font-medium text-[20px] text-white">
             {data.map((items, index) => (
-              <li className="cursor-pointer" key={index}>
+              <li
+                onClick={() => handleScroll(items)}
+                className="cursor-pointer"
+                key={index}
+              >
                 {items}
               </li>
             ))}

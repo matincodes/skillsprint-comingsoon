@@ -7,7 +7,7 @@ import arrow from "../assets/icons/arrow.svg";
 
 const Choose = () => {
   return (
-    <div className="w-[80%] h-auto mt-[217px] flex flex-col gap-[29px] ">
+    <div id="Program highlights" className="w-[80%] h-auto mt-[217px] flex flex-col gap-[29px] ">
       <h2 className="font-bold text-[16px] text-white">
         Why Choose Skill Sprint?
       </h2>
@@ -59,7 +59,7 @@ const Choose = () => {
               </p>
             </span>
           </div>
-          <div className="w-auto h-auto   rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-white">
+          <div id="Waitlist" className="w-auto h-auto   rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-white">
             <img className="w-[24px] h-[24px]" src={slow} />
             <span>
               <h2 className="text-white text-[20px] font-Inter leading-[36px] font-bold">
@@ -72,7 +72,7 @@ const Choose = () => {
             </span>
           </div>
         </div>
-        <button className="w-[189px] h-[38px] rounded-[30px]  bg-orange font-Inter font-bold text-[12px] leading-[34px] text-white flex items-center justify-center gap-1">
+        <button  className="w-[189px] h-[38px] rounded-[30px]  bg-orange font-Inter font-bold text-[12px] leading-[34px] text-white flex items-center justify-center gap-1">
           <span>Join waitlist Today!</span> <img src={arrow} />
         </button>
       </div>

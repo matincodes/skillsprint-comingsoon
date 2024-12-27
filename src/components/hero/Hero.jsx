@@ -2,7 +2,7 @@ import arrow from "../../assets/icons/arrow.svg";
 import Animation from "./Animation";
 const Hero = () => {
   return (
-    <div className="w-full h-auto mt-[140px] flex flex-col gap-[101px] ">
+    <div id="Home" className="w-full h-auto mt-[140px] flex flex-col gap-[101px] ">
       {/* Hero contents */}
       <div className="w-full h-[284px] flex flex-col items-center gap-[50px] ">
         <span className=" flex flex-col items-center gap-[16px]">

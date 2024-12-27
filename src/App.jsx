@@ -6,9 +6,11 @@ import CountDown from "./components/CountDown";
 import Question from "./components/Question";
 import Footer from "./ui/Footer";
 const App = () => {
+
+  
   return (
     <div className="flex flex-col items-center bg-black">
-      <Nav />
+      <Nav  />
       <Hero />
       <About />
       <Choose/>

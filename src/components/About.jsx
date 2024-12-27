@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="w-[80%] h-auto mt-[217px] flex flex-col gap-[52px] ">
+    <div id="About" className="w-[80%] h-auto mt-[217px] flex flex-col gap-[52px] ">
       <div className="w-full h-auto flex flex-col gap-[22px] ">
         <h5 className="text-[15px] font-Montserrat text-gray  ">
           About program
