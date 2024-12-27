@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import GeneralInformation from "../ui/generalInformation";
+import GeneralInformation from "../ui/GeneralInformation";
 import ProgramDetails from "../ui/ProgramDetails";
 import RegistrationandFees from "../ui/registrationandFees";
 import CareerSupport from "../ui/CareerSupport";
