@@ -3,12 +3,18 @@ import GeneralInformation from "../ui/generalInformation";
 import ProgramDetails from "../ui/ProgramDetails";
 import RegistrationandFees from "../ui/registrationandFees";
 import CareerSupport from "../ui/CareerSupport";
+import LearningExperience from "../ui/LearningExperience";
+import TechnicalRequirements from "../ui/technicalRequirements";
+import AdditionalQuestions from "../ui/AdditionalQuestions";
 
 const currentState = {
   generalInformation: true,
   programDetails: false,
   registrationandFees: false,
   careerSupport: false,
+  learningExperience: false,
+  technicalRequirements: false,
+  additionalQuestions: false,
 };
 
 const reducer = (state, action) => {
@@ -20,6 +26,9 @@ const reducer = (state, action) => {
         programDetails: false,
         careerSupport: false,
         registrationandFees: false,
+        learningExperience: false,
+        technicalRequirements: false,
+        additionalQuestions: false,
       };
     case "programDetails":
       return {
@@ -28,6 +37,9 @@ const reducer = (state, action) => {
         generalInformation: false,
         careerSupport: false,
         registrationandFees: false,
+        learningExperience: false,
+        technicalRequirements: false,
+        additionalQuestions: false,
       };
     case "registrationandFees":
       return {
@@ -36,6 +48,9 @@ const reducer = (state, action) => {
         programDetails: false,
         generalInformation: false,
         careerSupport: false,
+        learningExperience: false,
+        technicalRequirements: false,
+        additionalQuestions: false,
       };
     case "careerSupport":
       return {
@@ -44,6 +59,42 @@ const reducer = (state, action) => {
         registrationandFees: false,
         programDetails: false,
         generalInformation: false,
+        learningExperience: false,
+        technicalRequirements: false,
+        additionalQuestions: false,
+      };
+    case "learningExperience":
+      return {
+        ...state,
+        careerSupport: false,
+        registrationandFees: false,
+        programDetails: false,
+        generalInformation: false,
+        learningExperience: true,
+        technicalRequirements: false,
+        additionalQuestions: false,
+      };
+    case "technicalRequirements":
+      return {
+        ...state,
+        careerSupport: false,
+        registrationandFees: false,
+        programDetails: false,
+        generalInformation: false,
+        learningExperience: false,
+        technicalRequirements: true,
+        additionalQuestions: false,
+      };
+    case "additionalQuestions":
+      return {
+        ...state,
+        careerSupport: false,
+        registrationandFees: false,
+        programDetails: false,
+        generalInformation: false,
+        learningExperience: false,
+        technicalRequirements: false,
+        additionalQuestions: true,
       };
     default:
       return state;
@@ -52,7 +103,15 @@ const reducer = (state, action) => {
 
 const Question = () => {
   const [
-    { registrationandFees, careerSupport, generalInformation, programDetails },
+    {
+      registrationandFees,
+      careerSupport,
+      generalInformation,
+      learningExperience,
+      programDetails,
+      technicalRequirements,
+      additionalQuestions,
+    },
     dispatch,
   ] = useReducer(reducer, currentState);
 
@@ -66,44 +125,77 @@ const Question = () => {
         <div className=" xl:w-[1696px] w-[1096px] h-[36px] flex gap-[26px]  ">
           <button
             onClick={() => dispatch({ type: "generalInformation" })}
-            className="  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center"
+            className={` ${
+              generalInformation &&
+              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+            }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             General Information
           </button>
           <button
             onClick={() => dispatch({ type: "programDetails" })}
-            className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center"
+            className={` ${
+              programDetails &&
+              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+            }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             Program Details
           </button>
           <button
             onClick={() => dispatch({ type: "registrationandFees" })}
-            className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center"
+            className={` ${
+              registrationandFees &&
+              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+            }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             Registration and Fees
           </button>
           <button
             onClick={() => dispatch({ type: "careerSupport" })}
-            className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center"
+            className={` ${
+              careerSupport &&
+              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+            }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             Career Support
           </button>
-          <button className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          <button
+            onClick={() => dispatch({ type: "learningExperience" })}
+            className={` ${
+              learningExperience &&
+              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+            }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
+          >
             Learning Experience
           </button>
-          <button className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          <button
+            onClick={() => dispatch({ type: "technicalRequirements" })}
+            className={` ${
+              technicalRequirements &&
+              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+            }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
+          >
             Technical Requirements
           </button>
-          <button className=" cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center">
+          <button
+            onClick={() => dispatch({ type: "additionalQuestions" })}
+            className={` ${
+              additionalQuestions &&
+              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+            }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
+          >
             Additional Questions
           </button>
         </div>
       </div>
-      {/* Acordiong */}
+      {/* Acordions */}
       {generalInformation && <GeneralInformation />}
       {programDetails && <ProgramDetails />}
       {registrationandFees && <RegistrationandFees />}
       {careerSupport && <CareerSupport />}
+      {learningExperience && <LearningExperience />}
+      {technicalRequirements && <TechnicalRequirements />}
+      {additionalQuestions && <AdditionalQuestions />}
     </div>
   );
 };
