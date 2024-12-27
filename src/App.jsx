@@ -14,7 +14,7 @@ const App = () => {
       <Hero />
       <About />
       <Choose/>
-      <CountDown/>
+      <CountDown targetDate="2025-01-27T00:00:00"/>
       <Question/>
       <Footer/>
     </div>
