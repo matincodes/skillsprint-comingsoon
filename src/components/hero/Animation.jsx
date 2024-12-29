@@ -173,7 +173,7 @@ const Animation = () => {
         {icons.map((items) => (
           <span
             key={items.id}
-            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-white border-solid"
+            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-gray border-solid"
           >
             <img src={items.src} />
           </span>
@@ -181,7 +181,7 @@ const Animation = () => {
          {icons.map((items) => (
           <span
             key={items.id}
-            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-white border-solid"
+            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-gray border-solid"
           >
             <img src={items.src} />
           </span>
@@ -195,7 +195,7 @@ const Animation = () => {
         {icons.map((items) => (
           <span
             key={items.id}
-            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-white border-solid"
+            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-gray border-solid"
           >
             <img src={items.src} />
           </span>
@@ -203,7 +203,7 @@ const Animation = () => {
          {icons.map((items) => (
           <span
             key={items.id}
-            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-white border-solid"
+            className="w-[67px] h-[62px] px-[15px] py-[14px] bg-semiBlack rounded-lg border-[1px] border-gray border-solid"
           >
             <img src={items.src} />
           </span>

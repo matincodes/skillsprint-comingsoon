@@ -5,7 +5,7 @@ const About = () => {
         <h5 className="text-[15px] font-Montserrat text-gray  ">
           About program
         </h5>
-        <p className="text-[20px] font-Inter font-medium leading-[44px] text-white">
+        <p className="  text-[20px] font-Inter font-medium leading-[44px] text-white">
           Skill Sprint is an intensive tech education program by Thynkcity
           designed to equip you with the skills needed to thrive in today’s
           tech-driven world. Starting with a free one-month foundational course,
@@ -15,7 +15,7 @@ const About = () => {
       </div>
       {/* Cards */}
       <div className="w-full h-auto grid grid-cols-2 md:flex md:justify-between  gap-[26px] ">
-        <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
+        <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-gray bg-semiBlack">
           <span className="text-white font-bold text-[16px] leading-[22px]">
             Free
           </span>{" "}
@@ -23,7 +23,7 @@ const About = () => {
             foundational training.
           </span>
         </div>
-        <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
+        <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-gray bg-semiBlack">
           <span className="text-gray text-[16px] font-semibold leading-[22px]">
             Career
           </span>{" "}
@@ -34,7 +34,7 @@ const About = () => {
             and support.
           </span>
         </div>
-        <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
+        <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-gray bg-semiBlack">
           <span className="text-white font-bold text-[16px] leading-[22px]">
             Live classes
           </span>{" "}
@@ -45,7 +45,7 @@ const About = () => {
             projects
           </span>
         </div>
-        <div className="w-auto h-auto  rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-white">
+        <div className="w-auto h-auto  rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-gray bg-semiBlack">
           <span className="text-gray text-[16px] font-semibold leading-[22px]">
             Access to
           </span>

@@ -6,10 +6,10 @@ const Hero = () => {
       {/* Hero contents */}
       <div className="w-full h-[284px] flex flex-col items-center gap-[50px] ">
         <span className=" flex flex-col items-center gap-[16px]">
-          <h1 className="    text-white text-center text-[36px] leading-[48px] font-bold font-Montserrat">
+          <h1 className=" xl:w-[450px]    text-white text-center text-[36px] leading-[48px] font-bold font-Montserrat">
             Your Pathway to Tech Excellence
           </h1>
-          <p className="   text-gray text-center font-Inter   text-[15px] font-semibold leading-[28px]">
+          <p className=" xl:w-[550px]   text-gray text-center font-Inter   text-[15px] font-semibold leading-[28px]">
             Kickstart your tech journey with our free one-month foundational
             program, learn the skills to thrive in tech, from coding to AI.
           </p>

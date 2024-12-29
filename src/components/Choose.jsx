@@ -14,7 +14,7 @@ const Choose = () => {
       <div className="w-full h-auto flex flex-col items-center gap-[74px] ">
         {/* Cards container */}
         <div className="flex flex-col md:grid md:grid-cols-3 gap-[32px] w-full h-auto ">
-          <div className="w-auto h-auto rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-white">
+          <div className="w-auto h-auto rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-gray bg-semiBlack">
             <img className="w-[24px] h-[24px]" src={video} />
             <span>
               <h2 className="text-white text-[20px] font-Inter leading-[36px] font-bold">
@@ -25,7 +25,7 @@ const Choose = () => {
               </p>
             </span>
           </div>
-          <div className="w-auto h-auto rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-white">
+          <div className="w-auto h-auto rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-gray bg-semiBlack">
             <img className="w-[24px] h-[24px]" src={task} />
             <span>
               <h2 className="text-white text-[20px] font-Inter leading-[36px] font-bold">
@@ -36,7 +36,7 @@ const Choose = () => {
               </p>
             </span>
           </div>
-          <div className="w-auto h-auto rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-white">
+          <div className="w-auto h-auto rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-gray bg-semiBlack">
             <img className="w-[24px] h-[24px]" src={mentor} />
             <span>
               <h2 className="text-white text-[20px] font-Inter leading-[36px] font-bold">
@@ -47,7 +47,7 @@ const Choose = () => {
               </p>
             </span>
           </div>
-          <div className="w-auto h-auto md:col-span-2  rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-white">
+          <div className="w-auto h-auto md:col-span-2  rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-gray bg-semiBlack">
             <img className="w-[24px] h-[24px]" src={mentoring} />
             <span>
               <h2 className="text-white text-[20px] font-Inter leading-[36px] font-bold">
@@ -59,7 +59,7 @@ const Choose = () => {
               </p>
             </span>
           </div>
-          <div id="Waitlist" className="w-auto h-auto   rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-white">
+          <div id="Waitlist" className="w-auto h-auto   rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-gray bg-semiBlack">
             <img className="w-[24px] h-[24px]" src={slow} />
             <span>
               <h2 className="text-white text-[20px] font-Inter leading-[36px] font-bold">

@@ -127,7 +127,7 @@ const Question = () => {
             onClick={() => dispatch({ type: "generalInformation" })}
             className={` ${
               generalInformation &&
-              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+              "bg-semiBlack rounded-full border-solid border-[1px] border-gray"
             }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             General Information
@@ -136,7 +136,7 @@ const Question = () => {
             onClick={() => dispatch({ type: "programDetails" })}
             className={` ${
               programDetails &&
-              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+              "bg-semiBlack rounded-full border-solid border-[1px] border-gray"
             }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             Program Details
@@ -145,7 +145,7 @@ const Question = () => {
             onClick={() => dispatch({ type: "registrationandFees" })}
             className={` ${
               registrationandFees &&
-              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+              "bg-semiBlack rounded-full border-solid border-[1px] border-gray"
             }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             Registration and Fees
@@ -154,7 +154,7 @@ const Question = () => {
             onClick={() => dispatch({ type: "careerSupport" })}
             className={` ${
               careerSupport &&
-              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+              "bg-semiBlack rounded-full border-solid border-[1px] border-gray"
             }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             Career Support
@@ -163,7 +163,7 @@ const Question = () => {
             onClick={() => dispatch({ type: "learningExperience" })}
             className={` ${
               learningExperience &&
-              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+              "bg-semiBlack rounded-full border-solid border-[1px] border-gray"
             }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             Learning Experience
@@ -172,7 +172,7 @@ const Question = () => {
             onClick={() => dispatch({ type: "technicalRequirements" })}
             className={` ${
               technicalRequirements &&
-              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+              "bg-semiBlack rounded-full border-solid border-[1px] border-gray"
             }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             Technical Requirements
@@ -181,7 +181,7 @@ const Question = () => {
             onClick={() => dispatch({ type: "additionalQuestions" })}
             className={` ${
               additionalQuestions &&
-              "bg-semiBlack rounded-full border-solid border-[1px] border-white"
+              "bg-semiBlack rounded-full border-solid border-[1px] border-gray"
             }  cursor-pointer text-white font-Inter text-[10px] font-normal px-[19px] py-[14px] flex gap-[80px] items-center`}
           >
             Additional Questions

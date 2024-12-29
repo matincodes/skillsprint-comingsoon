@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import propTypes from "prop-types";
 
-
 const CountDown = ({ targetDate }) => {
   const calculateTimeLeft = useCallback(() => {
     const difference = new Date(targetDate) - new Date();
@@ -51,17 +50,15 @@ const CountDown = ({ targetDate }) => {
   return (
     <div className="xl:gap-[52px] w-[80%] h-auto flex flex-col gap-[29px] justify-between mt-[217px] ">
       <h2 className=" font-Montserrat text-[16px] font-bold text-white text-center">
-        {/* {isComplete
-          ? "program started"
-          : "The Countdown to Your Future Starts Now!"} */}
+        The Countdown to Your Future Starts Now!
       </h2>
-      <div className="w-full h-auto flex justify-between  ">
+      <div className="w-full h-auto flex justify-center gap-2  ">
         <div className="flex flex-col items-center  ">
           <span className="flex  gap-[4px]">
-            <p className=" xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[28px] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
+            <p className=" xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[100%] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
               {daysTens}
             </p>
-            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[28px] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
+            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[100%] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
               {daysOnes}
             </p>
           </span>
@@ -74,10 +71,10 @@ const CountDown = ({ targetDate }) => {
         </p>
         <div className="flex flex-col items-center  ">
           <span className="flex  gap-[4px]">
-            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[28px] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
+            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[100%] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
               {hoursTens}
             </p>
-            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[28px] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
+            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[100%] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
               {hoursOnes}
             </p>
           </span>
@@ -90,10 +87,10 @@ const CountDown = ({ targetDate }) => {
         </p>
         <div className="flex flex-col items-center  ">
           <span className="flex  gap-[4px]">
-            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[28px] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
+            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[100%] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
               {minutesTens}
             </p>
-            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[28px] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
+            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[100%] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
               {minutesOnes}
             </p>
           </span>
@@ -106,10 +103,10 @@ const CountDown = ({ targetDate }) => {
         </p>
         <div className="flex flex-col items-center  ">
           <span className="flex  gap-[4px]">
-            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[28px] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
+            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[100%] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
               {secondsTens}
             </p>
-            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[28px] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
+            <p className="xl:text-[96px] xl:w-[115px] xl:h-[177px] xl:justify-center w-[100%] h-[41px] flex items-center text-white text-[24px] font-bold font-Inter bg-darkGray px-[6px] py-[12px] rounded-sm">
               {secondsOnes}
             </p>
           </span>
