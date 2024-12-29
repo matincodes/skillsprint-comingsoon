@@ -23,6 +23,7 @@ const generalInformationData = [
     ans: "No, Skill Sprint also offers non-tech skills like Digital Marketing, SEO & Technical Writing, and Project Management to ensure participants can pursue diverse career opportunities.",
   },
 ];
+
 export default function GeneralInformation() {
   const [expanded, setExpanded] = React.useState(false);
 
