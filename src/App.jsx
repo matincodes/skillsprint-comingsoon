@@ -5,6 +5,7 @@ import Choose from "./components/Choose";
 import CountDown from "./components/CountDown";
 import Question from "./components/Question";
 import Footer from "./ui/Footer";
+import RegistrationForm from "./components/RegistrationForm";
 const App = () => {
 
   
@@ -14,7 +15,8 @@ const App = () => {
       <Hero />
       <About />
       <Choose/>
-      <CountDown targetDate="2025-01-27T00:00:00"/>
+      <CountDown targetDate="2025-03-01T00:00:00"/>
+      <RegistrationForm />
       <Question/>
       <Footer/>
     </div>
