@@ -4,6 +4,7 @@ import mentor from "../assets/icons/mentor.svg";
 import mentoring from "../assets/icons/mentoring.svg";
 import slow from "../assets/icons//slow.svg";
 import arrow from "../assets/icons/arrow.svg";
+import { Link } from "react-scroll";
 
 const Choose = () => {
   return (
@@ -72,9 +73,9 @@ const Choose = () => {
             </span>
           </div>
         </div>
-        <button  className="w-[189px] h-[38px] rounded-[30px]  bg-orange font-Inter font-bold text-[12px] leading-[34px] text-white flex items-center justify-center gap-1">
+        <Link  className="w-[189px] h-[38px] rounded-[30px]  bg-orange font-Inter font-bold text-[12px] leading-[34px] text-white flex items-center justify-center gap-1 cursor-pointer">
           <span>Join waitlist Today!</span> <img src={arrow} />
-        </button>
+        </Link>
       </div>
     </div>
   );

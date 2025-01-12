@@ -6,17 +6,20 @@ import CountDown from "./components/CountDown";
 import Question from "./components/Question";
 import Footer from "./ui/Footer";
 import RegistrationForm from "./components/RegistrationForm";
+import { Element } from "react-scroll";
 const App = () => {
 
   
   return (
     <div className="flex flex-col items-center bg-black">
       <Nav  />
-      <Hero />
+      <Hero section/>
       <About />
       <Choose/>
       <CountDown targetDate="2025-03-01T00:00:00"/>
-      <RegistrationForm />
+      <Element name="register">
+          <RegistrationForm />
+      </Element>
       <Question/>
       <Footer/>
     </div>

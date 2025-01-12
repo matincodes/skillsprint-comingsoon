@@ -1,5 +1,6 @@
 import arrow from "../../assets/icons/arrow.svg";
 import Animation from "./Animation";
+import { Link } from "react-scroll";
 const Hero = () => {
   return (
     <div id="Home" className="w-full h-auto mt-[140px] flex flex-col gap-[101px] ">
@@ -14,9 +15,13 @@ const Hero = () => {
             program, learn the skills to thrive in tech, from coding to AI.
           </p>
         </span>
-        <button className="w-[189px] h-[38px] rounded-[30px]  bg-orange font-Inter font-bold text-[12px] leading-[34px] text-white flex items-center justify-center gap-1">
+        <Link 
+          to="register"
+          smooth={true}
+          duration={500}
+          className="w-[189px] h-[38px] rounded-[30px]  bg-orange font-Inter font-bold text-[12px] leading-[34px] text-white flex items-center justify-center gap-1 cursor-pointer">
           <span>Join waitlist Today!</span> <img src={arrow} />
-        </button>
+        </Link>
       </div>
       {/* Animation container */}
       <Animation />
