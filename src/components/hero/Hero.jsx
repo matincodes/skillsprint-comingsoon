@@ -10,9 +10,8 @@ const Hero = () => {
           <h1 className=" xl:w-[450px]    text-white text-center text-[36px] leading-[48px] font-bold font-Montserrat">
             Your Pathway to Tech Excellence
           </h1>
-          <p className=" xl:w-[550px]   text-gray text-center font-Inter   text-[15px] font-semibold leading-[28px]">
-            Kickstart your tech journey with our free one-month foundational
-            program, learn the skills to thrive in tech, from coding to AI.
+          <p className=" xl:w-[70%] text-gray text-center font-Inter  text-[15px] font-semibold leading-[28px]">
+            Embark on a transformative tech journey with our free one-month foundational program, where you&apos;ll gain practical skills in everything from coding fundamentals to the exciting world of AI, setting the stage for a thriving career in the digital age.
           </p>
         </span>
         <Link 
