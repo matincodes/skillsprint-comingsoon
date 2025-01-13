@@ -48,7 +48,7 @@ const CountDown = ({ targetDate }) => {
   const [minutesTens, minutesOnes] = minutesDigits;
   const [secondsTens, secondsOnes] = secondsDigits;
   return (
-    <div className="xl:gap-[52px] w-[80%] h-auto flex flex-col gap-[29px] justify-between mt-[217px] ">
+    <div className="xl:gap-[52px] w-full md:w-[80%] h-auto flex flex-col gap-[29px] justify-between mt-[217px] ">
       <h2 className=" font-Montserrat text-[16px] font-bold text-white text-center">
         The Countdown to Your Future Starts Now!
       </h2>

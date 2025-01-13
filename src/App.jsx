@@ -13,11 +13,11 @@ const App = () => {
   return (
     <div className="flex flex-col items-center bg-black">
       <Nav  />
-      <Hero section/>
+      <Hero />
       <About />
       <Choose/>
       <CountDown targetDate="2025-03-01T00:00:00"/>
-      <Element name="register">
+      <Element name="register" className="w-full">
           <RegistrationForm />
       </Element>
       <Question/>

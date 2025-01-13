@@ -18,7 +18,7 @@ const Hero = () => {
           to="register"
           smooth={true}
           duration={500}
-          className="w-[189px] h-[38px] rounded-[30px]  bg-orange font-Inter font-bold text-[12px] leading-[34px] text-white flex items-center justify-center gap-1 cursor-pointer">
+          className="w-[189px] h-[38px] rounded-[30px]  bg-goldenBrown font-Inter font-bold text-[12px] leading-[34px] text-white flex items-center justify-center gap-1 cursor-pointer">
           <span>Join waitlist Today!</span> <img src={arrow} />
         </Link>
       </div>

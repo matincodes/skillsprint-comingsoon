@@ -116,7 +116,7 @@ const Question = () => {
   ] = useReducer(reducer, currentState);
 
   return (
-    <div id="FAQ" className="w-[80%] h-auto mt-4  flex flex-col gap-[29px] ">
+    <div id="FAQ" className="w-[80%] h-auto mt-4 flex flex-col gap-[29px] ">
       <h2 className=" text-white text-[16px] font-semibold font-Montserrat">
         Frequently asked questions
       </h2>

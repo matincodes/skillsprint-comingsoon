@@ -53,8 +53,9 @@ const About = () => {
           <span className="text-white font-bold text-[16px] leading-[22px]">
             internships{" "}
           </span>
+          <span className="text-gray text-[16px] font-semibold leading-[22px]">and</span>
           <span className="text-white font-bold text-[16px] leading-[22px]">
-            job{" "}
+            job
           </span>
           <span className="text-gray text-[16px] font-semibold leading-[22px]">
             placements
