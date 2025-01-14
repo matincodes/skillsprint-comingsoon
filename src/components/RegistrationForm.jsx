@@ -85,8 +85,12 @@ const RegistrationForm = () => {
     <div className="md:w-[60%] w-[95%] mx-auto h-auto my-20">
       <form onSubmit={handleSubmit} className="w-full">
         <h2 className="text-[30px] font-bold font-Montserrat text-white text-center pb-5">Skill Sprint Program Registration</h2>
-        <p className='text-gray font-Inter font-semibold text-center leading-7'>You are registering for our  <strong className='text-white'>one-month FREE</strong> intensive tech and non-tech program designed to equip you with foundational skills in various high-demand fields. This free program serves as an introduction to our comprehensive curriculum, preparing you for real-world projects and career opportunities.
+        <p className='text-gray font-Inter font-semibold text-center leading-7'>You are registering for our  <strong className='text-white'>one-month FREE intensive tech and non-tech program</strong>  designed to equip you with foundational skills in various high-demand fields. This free program serves as an introduction to our comprehensive curriculum, preparing you for real-world projects and career opportunities.
         </p>
+        <p className='text-gray font-Inter font-semibold text-center leading-7'>
+        🚀<strong className='text-white'> After the One-Month Free Program: </strong>Participants can choose to continue with our <strong className='text-white'>paid advanced courses</strong> , offering in-depth learning, advanced projects, career support, and direct access to internship and job opportunities.
+        </p>
+        <p className='text-gray font-Inter font-semibold text-center leading-7'><strong className='text-white'>Paid Program Details:</strong>  - Duration: 6 to 15 months (varies by course), - Flexible installment payment options, - Discounts for early sign-ups</p>
         {/* Personal Information */}
         <div className='flex flex-col md:flex-row gap-10 mb-6 mt-5'>
             <div className="w-full">
