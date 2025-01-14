@@ -60,7 +60,7 @@ const Choose = () => {
               </p>
             </span>
           </div>
-          <div id="Waitlist" className="w-auto h-auto   rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-gray bg-semiBlack">
+          <div className="w-auto h-auto   rounded-lg py-[26px] px-[19px] flex flex-col gap-[39px] border-solid border-[1px] border-gray bg-semiBlack">
             <img className="w-[24px] h-[24px]" src={slow} />
             <span>
               <h2 className="text-white text-[20px] font-Inter leading-[36px] font-bold">
