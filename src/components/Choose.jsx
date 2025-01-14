@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 const Choose = () => {
   return (
     <div id="Program highlights" className="w-[80%] h-auto mt-[217px] flex flex-col gap-[29px] ">
-      <h2 className="font-bold text-[16px] text-white">
+      <h2 className="font-bold text-[16px] md:text-[29px] text-white font-Montserrat">
         Why Choose Skill Sprint?
       </h2>
       <div className="w-full h-auto flex flex-col items-center gap-[74px] ">

@@ -82,7 +82,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="md:w-[60%] w-[95%] mx-auto h-auto my-20">
+    <div id='Waitlist' className="md:w-[60%] w-[95%] mx-auto h-auto my-20">
       <form onSubmit={handleSubmit} className="w-full">
         <h2 className="text-[30px] font-bold font-Montserrat text-white text-center pb-5">Skill Sprint Program Registration</h2>
         <p className='text-gray font-Inter font-semibold text-center leading-7'>You are registering for our  <strong className='text-white'>one-month FREE intensive tech and non-tech program</strong>  designed to equip you with foundational skills in various high-demand fields. This free program serves as an introduction to our comprehensive curriculum, preparing you for real-world projects and career opportunities.

@@ -14,7 +14,7 @@ const About = () => {
         </p>
       </div>
       {/* Cards */}
-      <div className="w-full h-auto grid grid-cols-2 md:flex md:justify-between  gap-[26px] ">
+      <div className="w-full h-auto grid grid-cols-2 md:flex md:justify-between  gap-[26px] font-Inter">
         <div className="w-auto h-auto   rounded-lg px-[15px] py-[20px] border-solid border-[1px] border-gray bg-semiBlack">
           <span className="text-white font-bold text-[16px] leading-[22px]">
             Free
