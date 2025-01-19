@@ -239,7 +239,6 @@ const RegistrationForm = () => {
               'Graphics Design',
               'Cloud Computing (AWS)',
               'Digital Marketing',
-              'Virtual Assistant',
               'Data Analytics',
               'Data Science',
               'Cybersecurity',
