@@ -45,10 +45,9 @@ const RegistrationForm = () => {
     try {
       // 1. Fetch all emails from SheetDB
       const response = await axios.get(sheetdbUrl);
-      const existingEmails = response.data.map((item) => item.email);
-
+      const existingEmails = response.data.map((item) => item.email.trim().toLowerCase())
       // 2. Check if the email already exists
-      if (existingEmails.includes(formData.email)) {
+      if (existingEmails.map(email => email.trim().toLowerCase()).includes(formData.email.trim().toLowerCase())) {
         setEmailError('This email is already registered.');
         return; // Stop submission
       }
